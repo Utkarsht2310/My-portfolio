@@ -1,0 +1,531 @@
+
+> masterPortfolio@0.1.0 test
+> react-scripts test Verification.test.js
+
+(node:12212) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+FAIL src/Verification.test.js (23.54s)
+  Page Rendering Verification
+    × renders Education page without crashing (59ms)
+    × renders Projects page without crashing (23ms)
+    × renders Contact page without crashing (6ms)
+    √ renders Resume page without crashing (22309ms)
+
+  ● Page Rendering Verification › renders Education page without crashing
+
+    Cannot find module '../../assets/images/data-analysislo.png' from 'CertificationCard.js'
+
+    [0m [90m 23 |[39m                 [33m<[39m[33mimg[39m
+     [90m 24 |[39m                   className[33m=[39m[32m"logo_img"[39m
+    [31m[1m>[22m[39m[90m 25 |[39m                   src[33m=[39m{require([32m`../../assets/images/${certificate.logo_path}`[39m)}
+     [90m    |[39m                        [31m[1m^[22m[39m
+     [90m 26 |[39m                   alt[33m=[39m{certificate[33m.[39malt_name}
+     [90m 27 |[39m                 [33m/[39m[33m>[39m
+     [90m 28 |[39m               [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+
+      at Resolver.resolveModule (node_modules/jest-resolve/build/index.js:259:17)
+      at CertificationCard.render (src/components/certificationCard/CertificationCard.js:25:24)
+      at finishClassComponent (node_modules/react-dom/cjs/react-dom.development.js:17160:31)
+      at updateClassComponent (node_modules/react-dom/cjs/react-dom.development.js:17110:24)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:18620:16)
+      at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:188:14)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
+      at HTMLUnknownElement.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
+      at Object.invokeGuardedCallbackDev (node_modules/react-dom/cjs/react-dom.development.js:237:16)
+      at invokeGuardedCallback (node_modules/react-dom/cjs/react-dom.development.js:292:31)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:23203:7)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22157:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22130:22)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:21756:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:21188:7)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:24373:3)
+      at node_modules/react-dom/cjs/react-dom.development.js:24758:7
+      at unbatchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:21903:12)
+      at legacyRenderSubtreeIntoContainer (node_modules/react-dom/cjs/react-dom.development.js:24757:5)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:24840:10)
+      at renderComponent (src/Verification.test.js:19:14)
+      at Object.<anonymous> (src/Verification.test.js:34:9)
+
+  ● Page Rendering Verification › renders Projects page without crashing
+
+    TypeError: Cannot read properties of undefined (reading 'split')
+
+    [0m [90m 29 |[39m               style[33m=[39m{{ color[33m:[39m theme[33m.[39msecondaryText }}
+     [90m 30 |[39m             [33m>[39m
+    [31m[1m>[22m[39m[90m 31 |[39m               [33mPublished[39m on {pub[33m.[39mcreatedAt[33m.[39msplit([32m"T"[39m)[[35m0[39m]}
+     [90m    |[39m                                           [31m[1m^[22m[39m
+     [90m 32 |[39m             [33m<[39m[33m/[39m[33mp[39m[33m>[39m
+     [90m 33 |[39m           [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+     [90m 34 |[39m           {[90m/* <div className="repo-stats">[39m[0m
+
+      at PublicationCard (src/components/publicationsCard/PublicationCard.js:31:43)
+      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14803:18)
+      at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:17482:13)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:18596:16)
+      at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:188:14)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
+      at HTMLUnknownElement.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
+      at Object.invokeGuardedCallbackDev (node_modules/react-dom/cjs/react-dom.development.js:237:16)
+      at invokeGuardedCallback (node_modules/react-dom/cjs/react-dom.development.js:292:31)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:23203:7)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22157:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22130:22)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:21756:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:21188:7)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:24373:3)
+      at node_modules/react-dom/cjs/react-dom.development.js:24758:7
+      at unbatchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:21903:12)
+      at legacyRenderSubtreeIntoContainer (node_modules/react-dom/cjs/react-dom.development.js:24757:5)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:24840:10)
+      at renderComponent (src/Verification.test.js:19:14)
+      at Object.<anonymous> (src/Verification.test.js:38:9)
+
+  ● Page Rendering Verification › renders Contact page without crashing
+
+    Cannot find module '../../assets/images/undefined' from 'ContactComponent.js'
+
+    [0m [90m 27 |[39m               [33m<[39m[33mdiv[39m className[33m=[39m[32m"contact-heading-img-div"[39m[33m>[39m
+     [90m 28 |[39m                 [33m<[39m[33mimg[39m
+    [31m[1m>[22m[39m[90m 29 |[39m                   src[33m=[39m{require([32m`../../assets/images/${ContactData["profile_image_path"]}`[39m)}
+     [90m    |[39m                        [31m[1m^[22m[39m
+     [90m 30 |[39m                   alt[33m=[39m[32m""[39m
+     [90m 31 |[39m                 [33m/[39m[33m>[39m
+     [90m 32 |[39m               [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+
+      at Resolver.resolveModule (node_modules/jest-resolve/build/index.js:259:17)
+      at Contact.render (src/pages/contact/ContactComponent.js:29:24)
+      at finishClassComponent (node_modules/react-dom/cjs/react-dom.development.js:17160:31)
+      at updateClassComponent (node_modules/react-dom/cjs/react-dom.development.js:17110:24)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:18620:16)
+      at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:188:14)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
+      at HTMLUnknownElement.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
+      at Object.invokeGuardedCallbackDev (node_modules/react-dom/cjs/react-dom.development.js:237:16)
+      at invokeGuardedCallback (node_modules/react-dom/cjs/react-dom.development.js:292:31)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:23203:7)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22157:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22130:22)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:21756:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:21188:7)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:24373:3)
+      at node_modules/react-dom/cjs/react-dom.development.js:24758:7
+      at unbatchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:21903:12)
+      at legacyRenderSubtreeIntoContainer (node_modules/react-dom/cjs/react-dom.development.js:24757:5)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:24840:10)
+      at renderComponent (src/Verification.test.js:19:14)
+      at Object.<anonymous> (src/Verification.test.js:42:9)
+
+  console.error node_modules/react/cjs/react.development.js:315
+    Warning: Each child in a list should have a unique "key" prop.
+    
+    Check the render method of `Educations`. See https://fb.me/react-warning-keys for more information.
+        in DegreeCard (at Educations.js:21)
+        in Educations (at EducationComponent.js:41)
+        in div (at EducationComponent.js:20)
+        in div (at EducationComponent.js:18)
+        in Education (at Verification.test.js:23)
+        in Router (created by BrowserRouter)
+        in BrowserRouter (at Verification.test.js:22)
+        in ThemeProvider (created by BaseProvider)
+        in div (created by Context.Consumer)
+        in ForwardRef (created by Context.Consumer)
+        in StyledAppContainer (created by Context.Consumer)
+        in LayersManager (created by BaseProvider)
+        in BaseProvider (at Verification.test.js:21)
+
+  console.error node_modules/react/cjs/react.development.js:315
+    Warning: Each child in a list should have a unique "key" prop.
+    
+    Check the render method of `DegreeCard`. See https://fb.me/react-warning-keys for more information.
+        in p (at DegreeCard.js:52)
+        in DegreeCard (at Educations.js:21)
+        in div (at Educations.js:19)
+        in div (at Educations.js:11)
+        in Educations (at EducationComponent.js:41)
+        in div (at EducationComponent.js:20)
+        in div (at EducationComponent.js:18)
+        in Education (at Verification.test.js:23)
+        in Router (created by BrowserRouter)
+        in BrowserRouter (at Verification.test.js:22)
+        in ThemeProvider (created by BaseProvider)
+        in div (created by Context.Consumer)
+        in ForwardRef (created by Context.Consumer)
+        in StyledAppContainer (created by Context.Consumer)
+        in LayersManager (created by BaseProvider)
+        in BaseProvider (at Verification.test.js:21)
+
+  console.error node_modules/react/cjs/react.development.js:315
+    Warning: Each child in a list should have a unique "key" prop.
+    
+    Check the render method of `Certifications`. See https://fb.me/react-warning-keys for more information.
+        in CertificationCard (at Certifications.js:21)
+        in Certifications (at EducationComponent.js:43)
+        in div (at EducationComponent.js:20)
+        in div (at EducationComponent.js:18)
+        in Education (at Verification.test.js:23)
+        in Router (created by BrowserRouter)
+        in BrowserRouter (at Verification.test.js:22)
+        in ThemeProvider (created by BaseProvider)
+        in div (created by Context.Consumer)
+        in ForwardRef (created by Context.Consumer)
+        in StyledAppContainer (created by Context.Consumer)
+        in LayersManager (created by BaseProvider)
+        in BaseProvider (at Verification.test.js:21)
+
+  console.error node_modules/jsdom/lib/jsdom/virtual-console.js:29
+    Error: Uncaught [Error: Cannot find module '../../assets/images/data-analysislo.png' from 'CertificationCard.js']
+        at reportException (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+        at invokeEventListeners (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:209:9)
+        at HTMLUnknownElementImpl._dispatch (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:119:9)
+        at HTMLUnknownElementImpl.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:82:17)
+        at HTMLUnknownElementImpl.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\nodes\HTMLElement-impl.js:30:27)
+        at HTMLUnknownElement.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:157:21)
+        at Object.invokeGuardedCallbackDev (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:237:16)
+        at invokeGuardedCallback (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:292:31)
+        at beginWork$1 (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:23203:7)
+        at performUnitOfWork (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:22157:12)
+        at workLoopSync (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:22130:22)
+        at performSyncWorkOnRoot (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21756:9)
+        at scheduleUpdateOnFiber (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21188:7)
+        at updateContainer (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24373:3)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24758:7
+        at unbatchedUpdates (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21903:12)
+        at legacyRenderSubtreeIntoContainer (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24757:5)
+        at Object.render (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24840:10)
+        at renderComponent (D:\Python\portfolioo\masterPortfolio\src\Verification.test.js:19:14)
+        at Object.<anonymous> (D:\Python\portfolioo\masterPortfolio\src\Verification.test.js:34:9)
+        at Object.asyncJestTest (D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+        at new Promise (<anonymous>)
+        at mapper (D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:73:41 Error: Cannot find module '../../assets/images/data-analysislo.png' from 'CertificationCard.js'
+        at Resolver.resolveModule (D:\Python\portfolioo\masterPortfolio\node_modules\jest-resolve\build\index.js:259:17)
+        at Resolver._getVirtualMockPath (D:\Python\portfolioo\masterPortfolio\node_modules\jest-resolve\build\index.js:390:14)
+        at Resolver._getAbsolutePath (D:\Python\portfolioo\masterPortfolio\node_modules\jest-resolve\build\index.js:376:14)
+        at Resolver.getModuleID (D:\Python\portfolioo\masterPortfolio\node_modules\jest-resolve\build\index.js:348:31)
+        at Runtime._shouldMock (D:\Python\portfolioo\masterPortfolio\node_modules\jest-runtime\build\index.js:942:37)
+        at Runtime.require [as requireModuleOrMock] (D:\Python\portfolioo\masterPortfolio\node_modules\jest-runtime\build\index.js:595:16)
+        at CertificationCard.render (D:\Python\portfolioo\masterPortfolio\src\components\certificationCard\CertificationCard.js:25:24)
+        at finishClassComponent (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:17160:31)
+        at updateClassComponent (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:17110:24)
+        at beginWork (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:18620:16)
+        at HTMLUnknownElement.callCallback (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:188:14)
+        at invokeEventListeners (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:193:27)
+        at HTMLUnknownElementImpl._dispatch (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:119:9)
+        at HTMLUnknownElementImpl.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:82:17)
+        at HTMLUnknownElementImpl.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\nodes\HTMLElement-impl.js:30:27)
+        at HTMLUnknownElement.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:157:21)
+        at Object.invokeGuardedCallbackDev (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:237:16)
+        at invokeGuardedCallback (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:292:31)
+        at beginWork$1 (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:23203:7)
+        at performUnitOfWork (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:22157:12)
+        at workLoopSync (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:22130:22)
+        at performSyncWorkOnRoot (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21756:9)
+        at scheduleUpdateOnFiber (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21188:7)
+        at updateContainer (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24373:3)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24758:7
+        at unbatchedUpdates (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21903:12)
+        at legacyRenderSubtreeIntoContainer (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24757:5)
+        at Object.render (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24840:10)
+        at renderComponent (D:\Python\portfolioo\masterPortfolio\src\Verification.test.js:19:14)
+        at Object.<anonymous> (D:\Python\portfolioo\masterPortfolio\src\Verification.test.js:34:9)
+        at Object.asyncJestTest (D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+        at new Promise (<anonymous>)
+        at mapper (D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:73:41 {
+      code: 'MODULE_NOT_FOUND'
+    }
+
+  console.warn node_modules/react-dom/cjs/react-dom.development.js:88
+    Warning: componentWillReceiveProps has been renamed, and is not recommended for use. See https://fb.me/react-unsafe-component-lifecycles for details.
+    
+    * Move data fetching code or side effects to componentDidUpdate.
+    * If you're updating state whenever props change, refactor your code to use memoization techniques or move it to static getDerivedStateFromProps. Learn more at: https://fb.me/react-derived-state
+    * Rename componentWillReceiveProps to UNSAFE_componentWillReceiveProps to suppress this warning in non-strict mode. In React 17.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+    
+    Please update the following components: RevealBase
+
+  console.error node_modules/react-dom/cjs/react-dom.development.js:19527
+    The above error occurred in the <CertificationCard> component:
+        in CertificationCard (at Certifications.js:21)
+        in div (at Certifications.js:19)
+        in div (at Certifications.js:11)
+        in Certifications (at EducationComponent.js:43)
+        in div (at EducationComponent.js:20)
+        in div (at EducationComponent.js:18)
+        in Education (at Verification.test.js:23)
+        in Router (created by BrowserRouter)
+        in BrowserRouter (at Verification.test.js:22)
+        in ThemeProvider (created by BaseProvider)
+        in div (created by Context.Consumer)
+        in ForwardRef (created by Context.Consumer)
+        in StyledAppContainer (created by Context.Consumer)
+        in LayersManager (created by BaseProvider)
+        in BaseProvider (at Verification.test.js:21)
+    
+    Consider adding an error boundary to your tree to customize error handling behavior.
+    Visit https://fb.me/react-error-boundaries to learn more about error boundaries.
+
+  console.error node_modules/react/cjs/react.development.js:315
+    Warning: Each child in a list should have a unique "key" prop.
+    
+    Check the render method of `Projects`. See https://fb.me/react-warning-keys for more information.
+        in GithubRepoCard (at Projects.js:54)
+        in Projects (at Verification.test.js:23)
+        in Router (created by BrowserRouter)
+        in BrowserRouter (at Verification.test.js:22)
+        in ThemeProvider (created by BaseProvider)
+        in div (created by Context.Consumer)
+        in ForwardRef (created by Context.Consumer)
+        in StyledAppContainer (created by Context.Consumer)
+        in LayersManager (created by BaseProvider)
+        in BaseProvider (at Verification.test.js:21)
+
+  console.error node_modules/react-dom/cjs/react-dom.development.js:88
+    Warning: Invalid DOM property `stroke-miterlimit`. Did you mean `strokeMiterlimit`?
+        in polyline (at ProjectsImg.js:83)
+        in svg (at ProjectsImg.js:7)
+        in ProjectsImg (at Projects.js:33)
+        in div (at Projects.js:28)
+        in div (at Projects.js:27)
+        in RevealBase (created by Fade)
+        in Fade (at Projects.js:26)
+        in div (at Projects.js:25)
+        in div (at Projects.js:23)
+        in Projects (at Verification.test.js:23)
+        in Router (created by BrowserRouter)
+        in BrowserRouter (at Verification.test.js:22)
+        in ThemeProvider (created by BaseProvider)
+        in div (created by Context.Consumer)
+        in ForwardRef (created by Context.Consumer)
+        in StyledAppContainer (created by Context.Consumer)
+        in LayersManager (created by BaseProvider)
+        in BaseProvider (at Verification.test.js:21)
+
+  console.error node_modules/react-dom/cjs/react-dom.development.js:88
+    Warning: Invalid DOM property `fill-rule`. Did you mean `fillRule`?
+        in path (at GithubRepoCard.js:25)
+        in svg (at GithubRepoCard.js:17)
+        in div (at GithubRepoCard.js:16)
+        in div (at GithubRepoCard.js:15)
+        in RevealBase (created by Fade)
+        in Fade (at GithubRepoCard.js:14)
+        in div (at GithubRepoCard.js:13)
+        in GithubRepoCard (at Projects.js:54)
+        in div (at Projects.js:52)
+        in div (at Projects.js:23)
+        in Projects (at Verification.test.js:23)
+        in Router (created by BrowserRouter)
+        in BrowserRouter (at Verification.test.js:22)
+        in ThemeProvider (created by BaseProvider)
+        in div (created by Context.Consumer)
+        in ForwardRef (created by Context.Consumer)
+        in StyledAppContainer (created by Context.Consumer)
+        in LayersManager (created by BaseProvider)
+        in BaseProvider (at Verification.test.js:21)
+
+  console.error node_modules/jsdom/lib/jsdom/virtual-console.js:29
+    Error: Uncaught [TypeError: Cannot read properties of undefined (reading 'split')]
+        at reportException (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+        at invokeEventListeners (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:209:9)
+        at HTMLUnknownElementImpl._dispatch (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:119:9)
+        at HTMLUnknownElementImpl.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:82:17)
+        at HTMLUnknownElementImpl.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\nodes\HTMLElement-impl.js:30:27)
+        at HTMLUnknownElement.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:157:21)
+        at Object.invokeGuardedCallbackDev (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:237:16)
+        at invokeGuardedCallback (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:292:31)
+        at beginWork$1 (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:23203:7)
+        at performUnitOfWork (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:22157:12)
+        at workLoopSync (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:22130:22)
+        at performSyncWorkOnRoot (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21756:9)
+        at scheduleUpdateOnFiber (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21188:7)
+        at updateContainer (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24373:3)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24758:7
+        at unbatchedUpdates (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21903:12)
+        at legacyRenderSubtreeIntoContainer (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24757:5)
+        at Object.render (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24840:10)
+        at renderComponent (D:\Python\portfolioo\masterPortfolio\src\Verification.test.js:19:14)
+        at Object.<anonymous> (D:\Python\portfolioo\masterPortfolio\src\Verification.test.js:38:9)
+        at Object.asyncJestTest (D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+        at new Promise (<anonymous>)
+        at mapper (D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:73:41 TypeError: Cannot read properties of undefined (reading 'split')
+        at PublicationCard (D:\Python\portfolioo\masterPortfolio\src\components\publicationsCard\PublicationCard.js:31:43)
+        at renderWithHooks (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:14803:18)
+        at mountIndeterminateComponent (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:17482:13)
+        at beginWork (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:18596:16)
+        at HTMLUnknownElement.callCallback (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:188:14)
+        at invokeEventListeners (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:193:27)
+        at HTMLUnknownElementImpl._dispatch (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:119:9)
+        at HTMLUnknownElementImpl.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:82:17)
+        at HTMLUnknownElementImpl.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\nodes\HTMLElement-impl.js:30:27)
+        at HTMLUnknownElement.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:157:21)
+        at Object.invokeGuardedCallbackDev (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:237:16)
+        at invokeGuardedCallback (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:292:31)
+        at beginWork$1 (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:23203:7)
+        at performUnitOfWork (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:22157:12)
+        at workLoopSync (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:22130:22)
+        at performSyncWorkOnRoot (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21756:9)
+        at scheduleUpdateOnFiber (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21188:7)
+        at updateContainer (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24373:3)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24758:7
+        at unbatchedUpdates (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21903:12)
+        at legacyRenderSubtreeIntoContainer (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24757:5)
+        at Object.render (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24840:10)
+        at renderComponent (D:\Python\portfolioo\masterPortfolio\src\Verification.test.js:19:14)
+        at Object.<anonymous> (D:\Python\portfolioo\masterPortfolio\src\Verification.test.js:38:9)
+        at Object.asyncJestTest (D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+        at new Promise (<anonymous>)
+        at mapper (D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+
+  console.error node_modules/react-dom/cjs/react-dom.development.js:19527
+    The above error occurred in the <PublicationCard> component:
+        in PublicationCard (at Projects.js:91)
+        in div (at Projects.js:89)
+        in div (at Projects.js:23)
+        in Projects (at Verification.test.js:23)
+        in Router (created by BrowserRouter)
+        in BrowserRouter (at Verification.test.js:22)
+        in ThemeProvider (created by BaseProvider)
+        in div (created by Context.Consumer)
+        in ForwardRef (created by Context.Consumer)
+        in StyledAppContainer (created by Context.Consumer)
+        in LayersManager (created by BaseProvider)
+        in BaseProvider (at Verification.test.js:21)
+    
+    Consider adding an error boundary to your tree to customize error handling behavior.
+    Visit https://fb.me/react-error-boundaries to learn more about error boundaries.
+
+  console.error node_modules/jsdom/lib/jsdom/virtual-console.js:29
+    Error: Uncaught [Error: Cannot find module '../../assets/images/undefined' from 'ContactComponent.js']
+        at reportException (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+        at invokeEventListeners (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:209:9)
+        at HTMLUnknownElementImpl._dispatch (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:119:9)
+        at HTMLUnknownElementImpl.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:82:17)
+        at HTMLUnknownElementImpl.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\nodes\HTMLElement-impl.js:30:27)
+        at HTMLUnknownElement.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:157:21)
+        at Object.invokeGuardedCallbackDev (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:237:16)
+        at invokeGuardedCallback (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:292:31)
+        at beginWork$1 (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:23203:7)
+        at performUnitOfWork (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:22157:12)
+        at workLoopSync (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:22130:22)
+        at performSyncWorkOnRoot (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21756:9)
+        at scheduleUpdateOnFiber (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21188:7)
+        at updateContainer (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24373:3)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24758:7
+        at unbatchedUpdates (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21903:12)
+        at legacyRenderSubtreeIntoContainer (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24757:5)
+        at Object.render (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24840:10)
+        at renderComponent (D:\Python\portfolioo\masterPortfolio\src\Verification.test.js:19:14)
+        at Object.<anonymous> (D:\Python\portfolioo\masterPortfolio\src\Verification.test.js:42:9)
+        at Object.asyncJestTest (D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+        at new Promise (<anonymous>)
+        at mapper (D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:73:41 Error: Cannot find module '../../assets/images/undefined' from 'ContactComponent.js'
+        at Resolver.resolveModule (D:\Python\portfolioo\masterPortfolio\node_modules\jest-resolve\build\index.js:259:17)
+        at Resolver._getVirtualMockPath (D:\Python\portfolioo\masterPortfolio\node_modules\jest-resolve\build\index.js:390:14)
+        at Resolver._getAbsolutePath (D:\Python\portfolioo\masterPortfolio\node_modules\jest-resolve\build\index.js:376:14)
+        at Resolver.getModuleID (D:\Python\portfolioo\masterPortfolio\node_modules\jest-resolve\build\index.js:348:31)
+        at Runtime._shouldMock (D:\Python\portfolioo\masterPortfolio\node_modules\jest-runtime\build\index.js:942:37)
+        at Runtime.require [as requireModuleOrMock] (D:\Python\portfolioo\masterPortfolio\node_modules\jest-runtime\build\index.js:595:16)
+        at Contact.render (D:\Python\portfolioo\masterPortfolio\src\pages\contact\ContactComponent.js:29:24)
+        at finishClassComponent (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:17160:31)
+        at updateClassComponent (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:17110:24)
+        at beginWork (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:18620:16)
+        at HTMLUnknownElement.callCallback (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:188:14)
+        at invokeEventListeners (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:193:27)
+        at HTMLUnknownElementImpl._dispatch (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:119:9)
+        at HTMLUnknownElementImpl.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:82:17)
+        at HTMLUnknownElementImpl.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\nodes\HTMLElement-impl.js:30:27)
+        at HTMLUnknownElement.dispatchEvent (D:\Python\portfolioo\masterPortfolio\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:157:21)
+        at Object.invokeGuardedCallbackDev (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:237:16)
+        at invokeGuardedCallback (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:292:31)
+        at beginWork$1 (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:23203:7)
+        at performUnitOfWork (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:22157:12)
+        at workLoopSync (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:22130:22)
+        at performSyncWorkOnRoot (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21756:9)
+        at scheduleUpdateOnFiber (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21188:7)
+        at updateContainer (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24373:3)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24758:7
+        at unbatchedUpdates (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:21903:12)
+        at legacyRenderSubtreeIntoContainer (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24757:5)
+        at Object.render (D:\Python\portfolioo\masterPortfolio\node_modules\react-dom\cjs\react-dom.development.js:24840:10)
+        at renderComponent (D:\Python\portfolioo\masterPortfolio\src\Verification.test.js:19:14)
+        at Object.<anonymous> (D:\Python\portfolioo\masterPortfolio\src\Verification.test.js:42:9)
+        at Object.asyncJestTest (D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+        at new Promise (<anonymous>)
+        at mapper (D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+        at D:\Python\portfolioo\masterPortfolio\node_modules\jest-jasmine2\build\queueRunner.js:73:41 {
+      code: 'MODULE_NOT_FOUND'
+    }
+
+  console.error node_modules/react-dom/cjs/react-dom.development.js:19527
+    The above error occurred in the <Contact> component:
+        in Contact (at Verification.test.js:23)
+        in Router (created by BrowserRouter)
+        in BrowserRouter (at Verification.test.js:22)
+        in ThemeProvider (created by BaseProvider)
+        in div (created by Context.Consumer)
+        in ForwardRef (created by Context.Consumer)
+        in StyledAppContainer (created by Context.Consumer)
+        in LayersManager (created by BaseProvider)
+        in BaseProvider (at Verification.test.js:21)
+    
+    Consider adding an error boundary to your tree to customize error handling behavior.
+    Visit https://fb.me/react-error-boundaries to learn more about error boundaries.
+
+  console.error node_modules/react-dom/cjs/react-dom.development.js:88
+    Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method.
+        in Document (at Resume.js:138)
+        in div (at Resume.js:137)
+        in div (at Resume.js:87)
+        in RevealBase (created by Fade)
+        in Fade (at Resume.js:86)
+        in div (at Resume.js:85)
+        in div (at Resume.js:83)
+        in ResumePage (at Verification.test.js:23)
+        in Router (created by BrowserRouter)
+        in BrowserRouter (at Verification.test.js:22)
+        in ThemeProvider (created by BaseProvider)
+        in div (created by Context.Consumer)
+        in ForwardRef (created by Context.Consumer)
+        in StyledAppContainer (created by Context.Consumer)
+        in LayersManager (created by BaseProvider)
+        in BaseProvider (at Verification.test.js:21)
+
+  console.error src/pages/resume/Resume.js:59
+    Error loading PDF: Error: Setting up fake worker failed: "Cannot find module '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.worker.min.js' from 'pdf.js'".
+        at D:\Python\portfolioo\masterPortfolio\node_modules\pdfjs-dist\legacy\build\webpack:\pdfjs-dist\build\pdf\src\display\api.js:2286:11
+
+  console.error node_modules/react-dom/cjs/react-dom.development.js:88
+    Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method.
+        in ResumePage (at Verification.test.js:23)
+        in Router (created by BrowserRouter)
+        in BrowserRouter (at Verification.test.js:22)
+        in ThemeProvider (created by BaseProvider)
+        in div (created by Context.Consumer)
+        in ForwardRef (created by Context.Consumer)
+        in StyledAppContainer (created by Context.Consumer)
+        in LayersManager (created by BaseProvider)
+        in BaseProvider (at Verification.test.js:21)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 1 passed, 4 total
+Snapshots:   0 total
+Time:        24.025s
+Ran all test suites matching /Verification.test.js/i.

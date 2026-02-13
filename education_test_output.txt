@@ -1,0 +1,15 @@
+
+> masterPortfolio@0.1.0 test
+> react-scripts test Verification.test.js -t " renders Education page without crashing\
+
+  Invalid testPattern Verification.test.js|renders|Education|page|without|crashing\ supplied. Running all tests instead.
+(node:3980) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:21816) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Test Suites: 2 skipped, 0 of 2 total
+Tests:       5 skipped, 5 total
+Snapshots:   0 total
+Time:        2.099s
+Ran all test suites with tests matching """.

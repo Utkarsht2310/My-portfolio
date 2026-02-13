@@ -1,0 +1,24 @@
+(node:15456) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Creating an optimized production build...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Compiled successfully.
+
+File sizes after gzip:
+
+  350.6 KB          build\static\js\2.40156517.chunk.js
+  158.05 KB (-5 B)  build\static\js\main.4cba6b09.chunk.js
+  16.87 KB          build\static\css\main.0c197f85.chunk.css
+  780 B             build\static\js\runtime-main.fb7e7b0c.js
+
+The project was built assuming it is hosted at ./.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+
+Find out more about deployment here:
+
+  https://bit.ly/CRA-deploy
+

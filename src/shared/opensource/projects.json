@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "id": "R_kgDOJWL0-g",
+      "name": "MeetSync ",
+      
+      "url": "https://github.com/Utkarsht2310/MeetSync-Advanced-video-conferencing-application",
+      "description": "MeetSync is a powerful video meeting application that combines Django, ZegoCloud, and AI-powered tools to create a modern, interactive meeting experience.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Django",
+          "iconifyClass": "simple-icons:django"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOG_vYHA",
+      "name": "Scrappy",
+      
+      "url": "https://github.com/Utkarsht2310/Scraper-Chatbot",
+      "description": "This project is a Flask-based web application that allows users to scrape website content, store it in a PostgreSQL database, and interact with the scraped data through an intelligent chatbot interface.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+                {
+          "name": "Flask",
+          "iconifyClass": "simple-icons:flask"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      "name": "SyncTube",
+      "url": "https://github.com/Utkarsht2310/GestureSyncTube-",
+      "description": "🔥An AI-powered computer vision project that lets you control YouTube and mouse movements using hand gestures and facial detection.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOG0_8uQ",
+      "name": "Hind-Cap",
+   
+      "url": "https://github.com/Utkarsht2310/Hind-Cap",
+      "description": "🌀A Flask-based web application that automatically generates and adds captions to videos..",
+      "isFork": false,
+      "languages": [
+               {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "Flask",
+          "iconifyClass": "simple-icons:flask"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOGcPKSQ",
+      "name": "Smart Itinerary Planner",
+     
+      "url": "https://github.com/Utkarsht2310/Ai-itinerary-Planner",
+      "description": "⚙️An intelligent travel assistant built with Python, OpenAI, Twilio, and OpenWeather API",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
+      "name": "YogaRX",
+     
+      "url": "https://github.com/Utkarsht2310/YogaRX",
+      "description": "🚀 YogaRx: Personalized Yoga Recommendations for Health Conditions.",
+      "isFork": false,
+      "languages": [
+                {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+                        {
+          "name": "Django",
+          "iconifyClass": "simple-icons:django"
+        },
+                {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        }
+      ]
+    }
+  ]
+}
